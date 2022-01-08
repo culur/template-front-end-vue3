@@ -1,0 +1,64 @@
+{
+    "css.validate": false,
+    "scss.validate": false,
+    "stylelint.enable": true,
+    "editor.codeActionsOnSave": {
+      "source.fixAll.stylelint": true,
+      "source.fixAll.markdownlint": true,
+    },
+    "editor.quickSuggestions": {
+      "strings": true
+    },
+    "eslint.validate": [
+      "javascript",
+      "typescript",
+      "vue"
+    ],
+    "files.associations": {
+      "*.css": "postcss",
+      ".husky/commit-msg": "shellscript",
+      ".husky/pre-commit": "shellscript",
+      ".husky/pre-push": "shellscript",
+      ".importsortrc": "json",
+      ".markdownlintignore": "ignore"
+    },
+    "files.autoSave": "afterDelay",
+    "files.autoSaveDelay": 5000,
+    "i18n-ally.keystyle": "nested",
+    "i18n-ally.localesPaths": "locales",
+    "i18n-ally.sortKeys": true,
+    "material-icon-theme.activeIconPack": "vue_vuex",
+    "prettier.enable": true,
+    "prettier.configPath": ".prettierrc.json",
+    "sort-imports.languages": [
+      "javascript",
+      "typescript",
+      "vue"
+    ],
+    "stylelint.validate": [
+      "javascript",
+      "typescript",
+      "vue"
+    ],
+    "typescript.tsdk": "node_modules/typescript/lib",
+    "workbench.iconTheme": "material-icon-theme",
+    "[javascript]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescript]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[vue]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "files.eol": "\n",
+    "editor.tabSize": 2,
+    "cSpell.words": [
+      "commify",
+      "demi",
+      "semibold",
+      "toastification",
+      "walletconnect"
+    ]
+  }
+  
