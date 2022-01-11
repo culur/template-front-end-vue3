@@ -17,7 +17,6 @@ declare module 'vue' {
     HomeHeaderItem: typeof import('./core/components/layouts/home/HomeHeaderItem.vue')['default']
     HomeHeroParallax: typeof import('./home/components/hero/HomeHeroParallax.vue')['default']
     HomeHeroSection: typeof import('./home/components/hero/HomeHeroSection.vue')['default']
-    'IconCarbon:warning': typeof import('~icons/carbon/warning')['default']
     LangSelect: typeof import('./core/components/LangSelect.vue')['default']
     Link: typeof import('./core/components/Link.vue')['default']
     Logo: typeof import('./core/components/Logo.vue')['default']

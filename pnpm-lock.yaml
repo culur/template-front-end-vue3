@@ -69,7 +69,7 @@ specifiers:
   vite-plugin-pwa: ^0.11.12
   vite-plugin-vue-layouts: ^0.5.0
   vite-plugin-windicss: ^1.6.1
-  vite-ssg: ^0.17.2
+  vite-ssg: ^0.17.5
   vitest: ^0.0.113
   vue: ^3.2.26
   vue-demi: ^0.12.1

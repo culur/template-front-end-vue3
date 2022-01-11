@@ -1,9 +1,8 @@
 <script lang="ts">
 import { defineComponent } from 'vue'
-import Kinesis from 'vue-kinesis'
-const { KinesisContainer, KinesisElement } = Kinesis
+import { KinesisContainer, KinesisElement } from 'vue-kinesis'
 import { ParticlesComponent as Particles } from 'particles.vue3'
-import type { ISourceOptions } from "tsparticles";
+import type { ISourceOptions } from 'tsparticles'
 
 export default defineComponent({
   components: { KinesisContainer, KinesisElement, Particles },
@@ -13,46 +12,46 @@ export default defineComponent({
       particles: {
         move: {
           bounce: false,
-          direction: "none",
+          direction: 'none',
           enable: true,
-          outModes: "out",
+          outModes: 'out',
           random: true,
           speed: 0.6,
-          straight: true
+          straight: true,
         },
         number: { density: { enable: true, area: 800 }, value: 50 },
         opacity: {
           value: {
-            min: 0.05, max: 0.2
-          }
+            min: 0.05, max: 0.2,
+          },
         },
         shape: {
-          type: "circle"
+          type: 'circle',
         },
         size: {
-          value: { min: 1, max: 10 }
+          value: { min: 1, max: 10 },
         },
       },
       themes: [
         {
-          name: "light",
+          name: 'light',
           options: {
             background: {
-              color: "transparent"
+              color: 'transparent',
             },
             particles: {
               color: {
-                value: "#fff"
-              }
-            }
-          }
+                value: '#fff',
+              },
+            },
+          },
         },
-      ]
+      ],
     }
     return {
-      particleConfig
+      particleConfig,
     }
-  }
+  },
 })
 </script>
 
