@@ -70,7 +70,7 @@ export default defineComponent({
           class="h-full w-full object-cover"
           :src="`/img/home/hero/l${5 - index}.png`"
           :alt="`Para layer ${index}`"
-        />
+        >
       </picture>
     </KinesisElement>
     <KinesisElement class="absolute -left-[7%] top-0 h-[114%] w-[114%]" :strength="30">
@@ -79,8 +79,8 @@ export default defineComponent({
     <KinesisElement class="absolute -left-[7%] top-0 h-[114%] w-[114%]" :strength="0">
       <Particles id="tsparticles" :options="particleConfig" />
     </KinesisElement>
-    <KinesisElement class="absolute -left-[7%] top-0 h-[114%] w-[114%]" :strength="50">
-      <div class="absolute left-1/2 top-1/2 transform-gpu -translate-x-[50%] -translate-y-[50%]">
+    <KinesisElement class="absolute left-1/2 top-1/2" :strength="15" type="depth">
+      <div class="transform-gpu -translate-x-[50%] -translate-y-[50%]">
         <picture>
           <img
             data-aos="fade"
@@ -88,7 +88,7 @@ export default defineComponent({
             class="object-contain"
             src="/img/home/hero/intro-board.png"
             alt="Intro Board"
-          />
+          >
         </picture>
         <Link to="https://www.youtube.com/watch?v=8k2CqS3smes&list=RD8k2CqS3smes&start_radio=1">
           <picture>
@@ -98,7 +98,7 @@ export default defineComponent({
               class="object-contain mx-auto -mt-12 transform-gpu transition-transform duration-300 hover:scale-115"
               src="/img/home/hero/intro-play.png"
               alt="Intro Play"
-            />
+            >
           </picture>
         </Link>
       </div>
