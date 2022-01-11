@@ -73,13 +73,13 @@ export default defineComponent({
         >
       </picture>
     </KinesisElement>
-    <KinesisElement class="absolute -left-[7%] top-0 h-[114%] w-[114%]" :strength="30">
+    <KinesisElement class="absolute inset-0" :strength="0">
       <div class="absolute inset-0 bottom-3/4 block bg-gradient-to-b from-black to-transparent" />
     </KinesisElement>
-    <KinesisElement class="absolute -left-[7%] top-0 h-[114%] w-[114%]" :strength="0">
+    <KinesisElement class="absolute -left-[7%] top-0 h-[114%] w-[114%]" :strength="20">
       <Particles id="tsparticles" :options="particleConfig" />
     </KinesisElement>
-    <KinesisElement class="absolute left-1/2 top-1/2" :strength="15" type="depth">
+    <KinesisElement class="absolute left-1/2 top-1/2" :strength="25" type="depth">
       <div class="transform-gpu -translate-x-[50%] -translate-y-[50%]">
         <picture>
           <img
