@@ -13,3 +13,6 @@ declare module '*.vue' {
   import Vue from 'vue'
   export default Vue
 }
+
+declare module "particles.vue3";
+declare module "vue-kinesis";

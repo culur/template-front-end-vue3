@@ -14,8 +14,14 @@ import VueI18n from '@intlify/vite-plugin-vue-i18n'
 import Inspect from 'vite-plugin-inspect'
 import Prism from 'markdown-it-prism'
 import LinkAttributes from 'markdown-it-link-attributes'
+import { ElementPlusResolver } from 'unplugin-vue-components/resolvers'
+import pkg from './package.json'
 
 const markdownWrapperClasses = 'prose prose-sm m-auto text-left'
+
+process.env.VITE_APP_VERSION = pkg.version
+if (process.env.NODE_ENV === 'production')
+  process.env.VITE_APP_BUILD_EPOCH = new Date().getTime().toString()
 
 export default defineConfig({
   resolve: {
@@ -42,7 +48,7 @@ export default defineConfig({
 
     // https://github.com/JohnCampionJr/vite-plugin-vue-layouts
     Layouts({
-      defaultLayout: 'DefaultLayout',
+      defaultLayout: 'default',
       layoutsDir: 'src/core/layouts',
     }),
 
@@ -57,6 +63,7 @@ export default defineConfig({
         'vitest',
       ],
       dts: 'src/auto-imports.d.ts',
+      resolvers: [ElementPlusResolver()]
     }),
 
     // https://github.com/antfu/unplugin-vue-components
@@ -68,6 +75,9 @@ export default defineConfig({
 
       // search for subdirectories
       deep: true,
+
+      dts: 'src/components.d.ts',
+
       // allow auto import and register components used in markdown
       include: [/\.vue$/, /\.vue\?vue/, /\.md$/],
 
@@ -79,9 +89,8 @@ export default defineConfig({
           componentPrefix: 'icon',
           // enabledCollections: ['icon-carbon']
         }),
+        ElementPlusResolver()
       ],
-
-      dts: 'src/components.d.ts',
     }),
 
     // https://github.com/antfu/unplugin-icons

@@ -12,6 +12,14 @@ export default defineConfig({
   ],
   theme: {
     extend: {
+      container: {
+        center: true,
+        padding: '1rem',
+      },
+      fontFamily: {
+        sans: ['ABeeZee', 'sans-serif'],
+        display: ['\"Fredoka One\"', 'cursive'],
+      },
       typography: {
         DEFAULT: {
           css: {

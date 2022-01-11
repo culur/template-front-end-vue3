@@ -10,9 +10,11 @@ const messages = Object.fromEntries(
     import.meta.globEager('../../../locales/*.y(a)?ml'))
     .map(([key, value]) => {
       const yaml = key.endsWith('.yaml')
-      return [key.slice(14, yaml ? -5 : -4), value.default]
+      return [key.slice(17, yaml ? -5 : -4), value.default]
     }),
 )
+
+console.log(messages);
 
 export const install: UserModule = ({ app }) => {
   const i18n = createI18n({

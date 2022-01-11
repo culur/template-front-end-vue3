@@ -4,17 +4,25 @@
 
 declare module 'vue' {
   export interface GlobalComponents {
-    Counter: typeof import('./core/components/Counter.vue')['default']
-    Footer: typeof import('./core/components/Footer.vue')['default']
-    'IconCarbon:campsite': typeof import('~icons/carbon/campsite')['default']
-    'IconCarbon:dicomOverlay': typeof import('~icons/carbon/dicom-overlay')['default']
-    'IconCarbon:language': typeof import('~icons/carbon/language')['default']
-    'IconCarbon:logoGithub': typeof import('~icons/carbon/logo-github')['default']
-    'IconCarbon:moon': typeof import('~icons/carbon/moon')['default']
-    'IconCarbon:pedestrian': typeof import('~icons/carbon/pedestrian')['default']
-    'IconCarbon:sun': typeof import('~icons/carbon/sun')['default']
-    'IconCarbon:warning': typeof import('~icons/carbon/warning')['default']
+    BalanceNumber: typeof import('./core/components/number/BalanceNumber.vue')['default']
+    BaseBtn: typeof import('./core/components/button/BaseBtn.vue')['default']
+    CurrencyNumber: typeof import('./core/components/number/CurrencyNumber.vue')['default']
+    DefaultAside: typeof import('./core/components/layouts/default/DefaultAside.vue')['default']
+    DefaultFooter: typeof import('./core/components/layouts/default/DefaultFooter.vue')['default']
+    DefaultHeader: typeof import('./core/components/layouts/default/DefaultHeader.vue')['default']
+    FullTextCountdown: typeof import('./core/components/countdown/FullTextCountdown.vue')['default']
+    HomeAboutSection: typeof import('./home/components/about/HomeAboutSection.vue')['default']
+    HomeFooter: typeof import('./core/components/layouts/home/HomeFooter.vue')['default']
+    HomeHeader: typeof import('./core/components/layouts/home/HomeHeader.vue')['default']
+    HomeHeaderItem: typeof import('./core/components/layouts/home/HomeHeaderItem.vue')['default']
+    HomeHeroParallax: typeof import('./home/components/hero/HomeHeroParallax.vue')['default']
+    HomeHeroSection: typeof import('./home/components/hero/HomeHeroSection.vue')['default']
+    LangSelect: typeof import('./core/components/LangSelect.vue')['default']
+    Link: typeof import('./core/components/Link.vue')['default']
+    Logo: typeof import('./core/components/Logo.vue')['default']
+    Number: typeof import('./core/components/number/Number.vue')['default']
     README: typeof import('./core/components/README.md')['default']
+    TextCountdown: typeof import('./core/components/countdown/TextCountdown.vue')['default']
   }
 }
 

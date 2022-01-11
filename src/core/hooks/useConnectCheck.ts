@@ -1,4 +1,4 @@
-import useModalState, { ModalEnum } from './useModalState'
+import useModalState, { ModalEnum } from '../composables/useModalState'
 import { useWeb3Instance } from '~/core/hooks/useWeb3'
 
 export default function useConnectCheck() {

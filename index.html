@@ -9,10 +9,10 @@
   <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#00aba9">
   <meta name="msapplication-TileColor" content="#00aba9">
   <meta name="theme-color" content="#ffffff">
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
-    rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Fredoka+One&display=swap"
+    rel="stylesheet">
   <script>
     window.global = window
   </script>
@@ -26,13 +26,13 @@
     window.EventEmitter = EventEmitter
   </script>
   <script>
-       (function() {
-         const query = '(prefers-color-scheme: dark)'
-         const prefersDark = window.matchMedia && window.matchMedia(query).matches
-         const setting = localStorage.getItem('vueuse-color-scheme') || 'auto'
-         if (setting === 'dark' || (prefersDark && setting !== 'light'))
-           document.documentElement.classList.toggle('dark', true)
-})()
+      (function () {
+        const query = '(prefers-color-scheme: dark)'
+        const prefersDark = window.matchMedia && window.matchMedia(query).matches
+        const setting = localStorage.getItem('vueuse-color-scheme') || 'auto'
+        if (setting === 'dark' || (prefersDark && setting !== 'light'))
+          document.documentElement.classList.toggle('dark', true)
+      })()
   </script>
 </head>
 

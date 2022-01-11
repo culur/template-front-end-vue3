@@ -1,9 +1,17 @@
 <template>
-  <main class="px-4 py-10 text-center text-gray-700 dark:text-gray-200">
-    <router-view />
-    <Footer />
-    <div class="mt-5 mx-auto text-center opacity-25 text-sm">
-      [Home Layout]
-    </div>
-  </main>
+  <section class="grid grid-rows-[auto,1fr,auto] min-h-full text-base bg-home">
+    <HomeHeader class />
+    <main>
+      <router-view />
+    </main>
+    <HomeFooter />
+  </section>
 </template>
+
+
+<style scoped>
+.bg-home {
+  @apply bg-[#9FC210] bg-repeat;
+  background-image: url('/img/home/body/grass-textures.webp');
+}
+</style>

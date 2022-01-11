@@ -1,14 +1,18 @@
 button:
-  about: About
-  back: Back
-  go: GO
-  home: Home
-  toggle_dark: Toggle dark mode
-  toggle_langs: Change languages
-intro:
-  desc: Opinionated Vite Starter Template
-  dynamic-route: Demo of dynamic route
-  hi: Hi, {name}!
-  aka: Also known as
-  whats-your-name: What's your name?
+  staking: Staking
+  play: Play
+nav:
+  links:
+    home: Home
+    about: About
+    features: Features
+    animals: Animals
+    lion: $LION
+    roadmap: Roadmap
+    team: Team
+home:
+  about:
+    title: About Anirace
+    subtitle: '#ANIMALRACING'
+    content: Anirace is inspired by the mysterious and beautiful world of Animals, our mission is to build a comprehensive platform of digital monsters that will enable millions of individuals to participate in the NFT and blockchain-based gaming world in a simple, creative, and enjoyable way
 not-found: Not found

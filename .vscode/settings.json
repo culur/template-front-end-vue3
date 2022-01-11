@@ -49,7 +49,7 @@
       "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
     "[vue]": {
-      "editor.defaultFormatter": "esbenp.prettier-vscode"
+      "editor.defaultFormatter": "johnsoncodehk.volar"
     },
     "files.eol": "\n",
     "editor.tabSize": 2,
