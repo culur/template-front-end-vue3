@@ -1,6 +1,7 @@
 <script lang="ts">
 import { defineComponent } from 'vue'
-import { KinesisContainer, KinesisElement } from 'vue-kinesis'
+import Kinesis from 'vue-kinesis'
+const { KinesisContainer, KinesisElement } = Kinesis
 import { ParticlesComponent as Particles } from 'particles.vue3'
 import type { ISourceOptions } from "tsparticles";
 

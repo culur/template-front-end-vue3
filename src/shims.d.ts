@@ -14,5 +14,11 @@ declare module '*.vue' {
   export default Vue
 }
 
-declare module "particles.vue3";
-declare module "vue-kinesis";
+declare module 'particles.vue3' {
+  export const ParticlesComponent: Component
+}
+
+declare module 'vue-kinesis' {
+  import { Component } from 'vue'
+  export const KinesisContainer: Component, KinesisElement: Component
+}
