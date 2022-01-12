@@ -12,6 +12,11 @@ export default defineConfig({
   ],
   theme: {
     extend: {
+      colors: {
+        heading: '#9B5219',
+        sub: '#66412F',
+        text: '#33260B',
+      },
       container: {
         center: true,
         padding: '1rem',

@@ -61,7 +61,7 @@ export default defineComponent({
       v-for="index in 4"
       :key="index"
       class="absolute -left-[7%] top-0 h-[114%] w-[114%]"
-      :strength="5 * index"
+      :strength="15 * index"
     >
       <picture>
         <img
