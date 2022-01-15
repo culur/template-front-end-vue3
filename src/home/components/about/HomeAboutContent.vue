@@ -6,9 +6,9 @@ const { t } = useI18n()
 
 <template>
   <div class="flex flex-col justify-center">
-    <h1 class="font-display uppercase text-heading text-4xl">
+    <HomeSectionHeading>
       {{ t('home.about.title') }}
-    </h1>
+    </HomeSectionHeading>
     <small class="text-sub font-display text-sm">
       {{ t('home.about.subtitle') }}
     </small>

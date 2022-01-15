@@ -2,6 +2,8 @@
   <section>
     <HomeHeroSection />
     <HomeAboutSection />
+    <HomeFeatureSection />
+    <HomeAnimalSection />
   </section>
 </template>
 

@@ -14,8 +14,6 @@ const messages = Object.fromEntries(
     }),
 )
 
-console.log(messages);
-
 export const install: UserModule = ({ app }) => {
   const i18n = createI18n({
     legacy: false,

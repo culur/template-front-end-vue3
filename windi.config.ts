@@ -1,6 +1,7 @@
 import { defineConfig } from 'windicss/helpers'
 import colors from 'windicss/colors'
 import typography from 'windicss/plugin/typography'
+import aspectRatio from 'windicss/plugin/aspect-ratio'
 
 export default defineConfig({
   darkMode: 'class',
@@ -9,6 +10,7 @@ export default defineConfig({
 
   plugins: [
     typography(),
+    aspectRatio,
   ],
   theme: {
     extend: {

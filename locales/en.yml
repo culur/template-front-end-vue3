@@ -22,4 +22,43 @@ home:
               Understanding the pain of animals, our team created a click to earn game called Animals Racing to both spread the message of caring about the environment and protecting the lives of animals.
 
               Also at the same time help people who are participating in the cryptocurrency market to earn their own income
+  features:
+    title: Game's Features
+    content:
+      feature-1:
+        title: Animal Racing
+        content: Players can participate in amazing races on the battlefield to earn Animals Racing Tokens (LION). 
+      feature-2:
+        title: Animal In The Box
+        content: Each box will contain animals of different rarity, the higher the rarity the higher the number of races in the day. 
+      feature-3:
+        title: Reward Pool
+        content: After each race, if the player's animal wins, he will receive an amount of exp and a corresponding amount of tokens compared to the rank that player achieved.
+      feature-4:
+        title: Animal Market
+        content: The Marketplace - an extremely bustling place - a place for players to exchange and trade the animals they own.
+  animals:
+    title: Animals
+    content:
+      animal-1:
+        title: The Lion King
+        content: |
+                  We don’t know where is he from yet.
+                  But... Oh boi, he’s FAST
+      animal-2:
+        title: The Lion King 2
+        content: |
+                  We don’t know where is he from yet.
+                  But... Oh boi, he’s FAST
+      animal-3:
+        title: The Lion King 3
+        content: |
+                  We don’t know where is he from yet.
+                  But... Oh boi, he’s FAST
+      animal-4:
+        title: The Lion King 4
+        content: |
+                  We don’t know where is he from yet.
+                  But... Oh boi, he’s FAST
+      
 not-found: Not found
