@@ -6,7 +6,7 @@ const selectedAnimalIdx = ref(1)
 <template>
   <section>
     <div class="container py-8">
-      <HomeSectionHeading class="text-center">
+      <HomeSectionHeading class="text-center my-8">
         {{t('home.animals.title')}}
       </HomeSectionHeading>
       <HomeAnimalAvatars v-model="selectedAnimalIdx" class="my-8" />

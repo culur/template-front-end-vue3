@@ -14,7 +14,7 @@ const props = defineProps({
 
 <template>
   <li class="feature-item">
-    <div class="h-245px w-245px bg-grass-block flex items-center justify-center">
+    <div class="h-150px w-150px md:h-245px md:w-245px bg-grass-block flex items-center justify-center">
       <img class="w-5/12 h-auto block" :src="FEATURE_ICON_MAP[idx]" :alt="`Feature ${idx}`">
     </div>
     <h4 class="font-display text-2xl mt-2 mb-4 text-[#FFF47C]">

@@ -43,22 +43,19 @@ home:
       animal-1:
         title: The Lion King
         content: |
-                  We don’t know where is he from yet.
-                  But... Oh boi, he’s FAST
+                  We don’t know where he from yet.
+                  But... Oh boi, he’s FAST.
       animal-2:
-        title: The Lion King 2
+        title: The Zebarcode
         content: |
-                  We don’t know where is he from yet.
-                  But... Oh boi, he’s FAST
+                  How fast does a zebra have to run before it looks gray?
       animal-3:
-        title: The Lion King 3
+        title: The Fat Unicorn
         content: |
-                  We don’t know where is he from yet.
-                  But... Oh boi, he’s FAST
+                  Legend says the race is just a part of his diet plans.
       animal-4:
-        title: The Lion King 4
+        title: The Wild Doge
         content: |
-                  We don’t know where is he from yet.
-                  But... Oh boi, he’s FAST
+                  The lion may look cooler but the wolf does not perform in the circus.
       
 not-found: Not found

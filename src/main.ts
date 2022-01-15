@@ -2,6 +2,8 @@
 import { ViteSSG } from 'vite-ssg'
 import generatedRoutes from 'virtual:generated-pages'
 import { setupLayouts } from 'virtual:generated-layouts'
+
+import 'element-plus/theme-chalk/base.css'
 // windicss layers
 import 'virtual:windi-base.css'
 import 'virtual:windi-components.css'

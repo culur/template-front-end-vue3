@@ -11,7 +11,7 @@ const selected = useVModel(props, 'modelValue', emit)
 </script>
 
 <template>
-  <ul class="grid grid-cols-[repeat(auto-fit,65px)] md:grid-cols-[repeat(auto-fit,130px)] justify-center gap-12">
+  <ul class="grid grid-cols-[repeat(auto-fit,65px)] md:grid-cols-[repeat(auto-fit,130px)] justify-center gap-4 md:gap-12">
     <li v-for="idx in 4" :key="idx" @click.prevent="selected = idx" class="">
       <HomeAnimalAvatar :idx="idx" :selected="idx === selected" />
     </li>
