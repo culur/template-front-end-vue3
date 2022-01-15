@@ -27,15 +27,15 @@ const getPositionStyle = (label: TokenomyLabel) => {
       v-for="(label, index) in TOKENOMY_LABEL"
       :key="label"
       :style="getPositionStyle(label)"
-      class="bg-white bg-opacity-50 rounded-lg py-2 px-3 transition-colors duration-500 hover:bg-opacity-100"
-      :class="active === index ? 'bg-opacity-100' : null"
+      class="bg-black bg-opacity-50 rounded-lg py-2 px-3 transition-colors duration-500 hover:bg-opacity-90"
+      :class="active === index ? 'bg-opacity-90' : null"
     >
       <strong
-        class="font-display font-normal text-[#66412F] text-lg"
+        class="font-display font-normal text-[#DBF425] text-lg"
       >
         {{ t('home.tokenomy.legend.' + label) }}
       </strong>
-      <p class="text-[#1A4403]">
+      <p class="text-white">
         <span>{{ numberToPercent(TOKENOMY_SERIES[index], 1) }}</span>
         {{' '}}
         <small>({{ t('home.tokenomy.n_tokens', { n: Intl.NumberFormat(locale).format(TOKENOMY_SERIES[index] * TOKEN_TOTAL_SUPPLY / 100) }) }})</small>
