@@ -26,16 +26,16 @@ export default defineComponent({
           class="row-start-2 lg:row-start-1 flex flex-col justify-center text-center lg:text-left"
         >
           <h4
-            class="text-4xl font-display text-[#66412F] mb-4"
+            class="text-2xl lg:text-4xl font-display text-[#66412F] mb-4"
           >{{ t(`home.animals.content.animal-${selected}.title`) }}</h4>
           <p
-            class="whitespace-pre-line text-2xl text-[#33260B]"
+            class="whitespace-pre-line lg:text-2xl text-[#33260B]"
           >{{ t(`home.animals.content.animal-${selected}.content`) }}</p>
         </div>
         <div class="row-start-1">
           <div class="flex justify-center">
             <KinesisContainer class="relative">
-              <KinesisElement :strength="5" class="w-396px">
+              <KinesisElement :strength="5" class="lg:w-396px w-full">
                 <svg
                   width="100%"
                   height="auto"

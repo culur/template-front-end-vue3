@@ -100,7 +100,7 @@ export default defineConfig({
 
     // https://github.com/antfu/vite-plugin-windicss
     WindiCSS({
-      safelist: markdownWrapperClasses,
+      safelist: [markdownWrapperClasses],
     }),
 
     // https://github.com/antfu/vite-plugin-md

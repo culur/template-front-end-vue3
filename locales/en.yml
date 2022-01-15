@@ -57,5 +57,19 @@ home:
         title: The Wild Doge
         content: |
                   The lion may look cooler but the wolf does not perform in the circus.
+  tokenomy:
+    title: Tokenomy
+    legend:
+      play_to_earn: Play to Earn
+      team: Team
+      community_ecosystem: Community/Ecosystem
+      public_sale: Public Sale
+      liquidity: Liquidity
+      staking_reward: Staking Reward
+      advisor: Advisor
+      marketing: Marketing
+      private_sale: Private Sale
+      airdrop: Airdrop
+    n_tokens: "{n} tokens"
       
 not-found: Not found

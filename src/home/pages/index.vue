@@ -4,6 +4,7 @@
     <HomeAboutSection />
     <HomeFeatureSection />
     <HomeAnimalSection />
+    <HomeTokenomySection />
   </section>
 </template>
 
