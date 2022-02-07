@@ -1,11 +1,12 @@
 <script setup lang="ts">
 const { t } = useI18n()
-const toggleBg = ref(false)
+const { arrivedState } = useScroll(document)
+const { top } = toRefs(arrivedState)
 </script>
 
 <template>
   <header class="relative">
-    <nav :class="['h-16 fixed inset-0 text-white z-1031', toggleBg && 'bg-black bg-opacity-40']">
+    <nav :class="['h-16 fixed inset-0 text-white z-1031', !top && 'bg-black bg-opacity-70']">
       <div class="container h-full">
         <ul class="flex items-center h-full -mx-2 font-display uppercase">
           <HomeHeaderItem to="/">
