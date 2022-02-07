@@ -116,4 +116,8 @@ home:
                   - Mobile app Release
                   - PvP
                   - Coming Soon
+  team:
+    title: Our Team
+    core:
+      title: Core Team
 not-found: Not found

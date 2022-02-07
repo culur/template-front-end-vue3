@@ -6,7 +6,7 @@ const { top } = toRefs(arrivedState)
 
 <template>
   <header class="relative">
-    <nav :class="['h-16 fixed inset-0 text-white z-1031', !top && 'bg-black bg-opacity-70']">
+    <nav :class="['h-32 fixed inset-0 text-white z-1031', !top && 'bg-black bg-opacity-70']">
       <div class="container h-full">
         <ul class="flex items-center h-full -mx-2 font-display uppercase">
           <HomeHeaderItem to="/">
@@ -18,10 +18,10 @@ const { top } = toRefs(arrivedState)
             <HomeHeaderItem to="#features">{{ t('nav.links.features') }}</HomeHeaderItem>
             <HomeHeaderItem to="#token">{{ t('nav.links.lion') }}</HomeHeaderItem>
             <HomeHeaderItem to="#team">{{ t('nav.links.team') }}</HomeHeaderItem>
-            <HomeHeaderItem to="/staking">
+            <!-- <HomeHeaderItem to="/staking">
               <BaseBtn class="text-[#FB8428] bg-[#FCD6A3]">{{ t('button.staking') }}</BaseBtn>
-            </HomeHeaderItem>
-            <HomeHeaderItem to="/play">
+            </HomeHeaderItem> -->
+            <HomeHeaderItem to="/#coming-soon">
               <BaseBtn class="text-white bg-[#FB8428]">{{ t('button.play') }}</BaseBtn>
             </HomeHeaderItem>
           </ul>

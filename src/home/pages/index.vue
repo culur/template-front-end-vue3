@@ -6,6 +6,7 @@
     <HomeAnimalSection />
     <HomeTokenomySection />
     <HomeRoadmapSection />
+    <HomeTeamSection />
   </section>
 </template>
 

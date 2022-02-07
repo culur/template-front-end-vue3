@@ -31,6 +31,8 @@ declare module 'vue' {
     HomeRoadmapNodes: typeof import('./home/components/roadmap/HomeRoadmapNodes.vue')['default']
     HomeRoadmapSection: typeof import('./home/components/roadmap/HomeRoadmapSection.vue')['default']
     HomeSectionHeading: typeof import('./home/components/core/HomeSectionHeading.vue')['default']
+    HomeTeamSection: typeof import('./home/components/team/HomeTeamSection.vue')['default']
+    HomeTeamTile: typeof import('./home/components/team/HomeTeamTile.vue')['default']
     HomeTokenomyChart: typeof import('./home/components/tokenomy/HomeTokenomyChart.vue')['default']
     HomeTokenomyLegends: typeof import('./home/components/tokenomy/HomeTokenomyLegends.vue')['default']
     HomeTokenomySection: typeof import('./home/components/tokenomy/HomeTokenomySection.vue')['default']
