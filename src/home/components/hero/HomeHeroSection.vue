@@ -1,5 +1,5 @@
 <template>
-  <section class="h-screen overflow-hidden bg-light-900 hero-mask">
+  <section id="hero" class="h-screen overflow-hidden bg-light-900 hero-mask">
     <HomeHeroParallax />
   </section>
 </template>

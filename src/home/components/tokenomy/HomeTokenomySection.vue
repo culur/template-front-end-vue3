@@ -10,7 +10,7 @@ const onHoverLegend = (index: number) => {
 </script>
 
 <template>
-  <section class="bg-black bg-opacity-10 py-14">
+  <section id="tokenomy" class="bg-black bg-opacity-10 py-14">
     <div class="container">
       <HomeSectionHeading class="text-center text-[#F2FFE6] mb-14">
         {{t('home.tokenomy.title')}}

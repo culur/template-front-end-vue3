@@ -9,7 +9,12 @@ nav:
     animals: Animals
     lion: $LION
     roadmap: Roadmap
+    partner: Partner
     team: Team
+    whitepaper: Whitepaper
+    disclaimer: Disclaimer
+    toc: Terms and Conditions
+    faq: FAQ
 home:
   about:
     title: About Anirace
@@ -118,6 +123,15 @@ home:
                   - Coming Soon
   team:
     title: Our Team
-    core:
-      title: Core Team
+  partner:
+    title: Our Partners
+    powered_by: Powered By
+    audit_by: Audited By
+  footer:
+    about:
+      title: About
+    faq:
+      title: FAQ
+    social:
+      title: Social
 not-found: Not found

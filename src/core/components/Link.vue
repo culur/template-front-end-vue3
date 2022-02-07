@@ -3,7 +3,8 @@ const props = defineProps<{ to: string; disabled?: boolean }>()
 
 const isImageUrl = computed(() => /\.(png|jpg|jpeg|gif|svg)$/i.test(props.to))
 const isHTTP = computed(() => /^https?:\/\//i.test(props.to))
-const isAHref = computed(() => isHTTP.value || isImageUrl.value)
+const isHash = computed(() => /^#/i.test(props.to))
+const isAHref = computed(() => isHTTP.value || isImageUrl.value || isHash.value)
 </script>
 
 <template>

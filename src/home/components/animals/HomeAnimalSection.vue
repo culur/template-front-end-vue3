@@ -4,7 +4,7 @@ const selectedAnimalIdx = ref(1)
 </script>
 
 <template>
-  <section>
+  <section id="animal">
     <div class="container py-8">
       <HomeSectionHeading class="text-center my-8">
         {{t('home.animals.title')}}

@@ -3,7 +3,7 @@ const { t } = useI18n();
 </script>
 
 <template>
-  <section class="bg-features">
+  <section id="feature" class="bg-features">
     <div class="container text-center py-14 text-white">
       <HomeSectionHeading class="text-[#DBF425] mb-8"> {{ t("home.features.title") }} </HomeSectionHeading>
       <HomeFeatureList />

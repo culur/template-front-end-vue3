@@ -7,6 +7,7 @@
     <HomeTokenomySection />
     <HomeRoadmapSection />
     <HomeTeamSection />
+    <HomePartnerSection />
   </section>
 </template>
 

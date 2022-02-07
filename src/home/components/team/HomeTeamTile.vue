@@ -17,7 +17,7 @@ const props = defineProps({
     <div class="rounded-40px overflow-hidden">
       <img :src="team.image" :alt="team.name" />
     </div>
-    <h3 class="text-2xl" >{{ team.name }}</h3>
-    <small class="text-base text-opacity-60 text-white leading-none">{{ team.title }}</small>
+    <h3 class="md:text-2xl" >{{ team.name }}</h3>
+    <small class="md:text-base text-opacity-60 text-white leading-none">{{ team.title }}</small>
   </div>
 </template>
