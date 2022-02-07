@@ -36,10 +36,14 @@ const chartOptions: ApexComponentProps = {
     },
     labels: TOKENOMY_LABEL,
     fill: {
-      opacity: 0.8,
+      opacity: 0.2,
+      type: 'pattern',
+      pattern: {
+        style: 'squares',
+      },
     },
     stroke: {
-      width: 1,
+      width: 2,
       colors: undefined,
     },
     yaxis: {
@@ -65,7 +69,12 @@ const chartOptions: ApexComponentProps = {
       },
     },
     theme: {
-      palette: 'palette9',
+      monochrome: {
+        enabled: true,
+        color: '#A05D20',
+        shadeTo: 'dark',
+        shadeIntensity: 0,
+      },
     },
   },
   onDataPointMouseEnter(event: Event, chartContext: ApexCharts, config: { dataPointIndex: number; seriesIndex: number }) {
