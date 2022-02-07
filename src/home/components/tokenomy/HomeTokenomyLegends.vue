@@ -22,24 +22,26 @@ const getPositionStyle = (label: TokenomyLabel) => {
 </script>
 
 <template>
-  <ul class="grid grid-cols-2 gap-10px auto-rows-min">
-    <li
-      v-for="(label, index) in TOKENOMY_LABEL"
-      :key="label"
-      :style="getPositionStyle(label)"
-      class="bg-black bg-opacity-50 rounded-lg py-2 px-3 transition-colors duration-500 hover:bg-opacity-90"
-      :class="active === index ? 'bg-opacity-90' : null"
-    >
-      <strong
-        class="font-display font-normal text-[#DBF425] text-lg"
+  <div class="flex items-center">
+    <ul class="grid grid-cols-2 gap-10px auto-rows-min w-full">
+      <li
+        v-for="(label, index) in TOKENOMY_LABEL"
+        :key="label"
+        :style="getPositionStyle(label)"
+        class="bg-black bg-opacity-50 rounded-lg py-2 px-3 transition-colors duration-500 hover:bg-opacity-90"
+        :class="active === index ? 'bg-opacity-90' : null"
       >
-        {{ t('home.tokenomy.legend.' + label) }}
-      </strong>
-      <p class="text-white">
-        <span>{{ numberToPercent(TOKENOMY_SERIES[index], 1) }}</span>
-        {{' '}}
-        <small>({{ t('home.tokenomy.n_tokens', { n: Intl.NumberFormat(locale).format(TOKENOMY_SERIES[index] * TOKEN_TOTAL_SUPPLY / 100) }) }})</small>
-      </p>
-    </li>
-  </ul>
+        <strong
+          class="font-display font-normal text-[#DBF425] md:text-lg"
+        >
+          {{ t('home.tokenomy.legend.' + label) }}
+        </strong>
+        <p class="text-white md:text-base text-xs">
+          <span>{{ numberToPercent(TOKENOMY_SERIES[index], 1) }}</span>
+          {{' '}}
+          <small>({{ t('home.tokenomy.n_tokens', { n: Intl.NumberFormat(locale).format(TOKENOMY_SERIES[index] * TOKEN_TOTAL_SUPPLY / 100) }) }})</small>
+        </p>
+      </li>
+    </ul>
+  </div>
 </template>

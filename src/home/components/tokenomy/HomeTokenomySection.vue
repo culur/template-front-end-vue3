@@ -17,7 +17,7 @@ const onHoverLegend = (index: number) => {
       </HomeSectionHeading>
 
       <div class="grid grid-cols-12 max-w-screen-lg mx-auto px-4 auto-rows-min  ">
-        <HomeTokenomyLegends :active="hoverLegend" class="col-span-12 lg:col-span-5 row-start-2 lg:row-start-1 -mt-16 lg:mt-0" />
+        <HomeTokenomyLegends :active="hoverLegend" class="col-span-12 lg:col-span-5 row-start-2 lg:row-start-1 lg:mt-0" />
         <HomeTokenomyChart @legend="onHoverLegend" class="col-span-12 lg:col-span-7" />
       </div>
     </div>

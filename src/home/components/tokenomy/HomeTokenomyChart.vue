@@ -36,7 +36,7 @@ const chartOptions: ApexComponentProps = {
     },
     labels: TOKENOMY_LABEL,
     fill: {
-      opacity: 1,
+      opacity: 0.8,
     },
     stroke: {
       width: 1,
@@ -65,12 +65,7 @@ const chartOptions: ApexComponentProps = {
       },
     },
     theme: {
-      monochrome: {
-        enabled: true,
-        color: '#68E517',
-        shadeTo: 'dark',
-        shadeIntensity: 0.8,
-      },
+      palette: 'palette9',
     },
   },
   onDataPointMouseEnter(event: Event, chartContext: ApexCharts, config: { dataPointIndex: number; seriesIndex: number }) {
@@ -83,11 +78,21 @@ const chartOptions: ApexComponentProps = {
 </script>
 
 <template>
-  <KinesisContainer>
-    <KinesisElement type="depth" :strength="10">
-      <div class="aspect-square">
+  <section class="board-container">
+    <div class="board">
+      <div class="aspect-square flex items-center justify-center">
         <apexchart v-bind="chartOptions" />
       </div>
-    </KinesisElement>
-  </KinesisContainer>
+    </div>
+  </section>
 </template>
+
+<style scoped>
+.board-container {
+  @apply p-4;
+}
+.board {
+  background-image: url("/img/home/tokenmetric/board.svg");
+  @apply bg-center bg-contain bg-no-repeat;
+}
+</style>

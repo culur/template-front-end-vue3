@@ -36,29 +36,28 @@ home:
         content: After each race, if the player's animal wins, he will receive an amount of exp and a corresponding amount of tokens compared to the rank that player achieved.
       feature-4:
         title: Animal Market
-        content: The Marketplace - an extremely bustling place - a place for players to exchange and trade the animals they own.
+        content: The Marketplace- an extremely bustling place- a place for players to exchange and trade the animals they own.
   animals:
     title: Animals
     content:
       animal-1:
         title: The Lion King
         content: |
-                  We don’t know where he from yet.
-                  But... Oh boi, he’s FAST.
+                  Look at my name! Who can win the King?
       animal-2:
-        title: The Zebarcode
+        title: The Equus
         content: |
-                  How fast does a zebra have to run before it looks gray?
+                  It's always been a mystery how strong I am. The redhaired horse was ridden on its back, but I wasn't.
       animal-3:
-        title: The Fat Unicorn
+        title: Rhinocéros
         content: |
-                  Legend says the race is just a part of his diet plans.
+                  It's possible that I'm not the quickest. However, myths have always been used to glorify me.
       animal-4:
-        title: The Wild Doge
+        title: Caninae
         content: |
-                  The lion may look cooler but the wolf does not perform in the circus.
+                  The Lion and the Tiger may be more powerful, but the Wolf does not perform in the circus.
   tokenomy:
-    title: Tokenomy
+    title: $LION TOKENMETRIC
     legend:
       play_to_earn: Play to Earn
       team: Team
@@ -71,5 +70,50 @@ home:
       private_sale: Private Sale
       airdrop: Airdrop
     n_tokens: "{n} tokens"
-      
+  roadmap:
+    title: Project Roadmap
+    node:
+      1:
+        period: Phase 1
+        content: |
+                  - Generating ideas
+                  - Initializing the website
+                  - Building Social Media channels
+                  - Private Sale
+                  - Cooperation with partners
+                  - Marketing/KOLS Booking
+                  - Airdrop Campaign
+                  - Testnet game
+                  - Presale Whitelist Contest
+                  - KYC
+                  - Presale on Pinksale
+                  - Listing PCS
+                  - Release Game v1 (Running mode)
+      2:
+        period: Phase 2
+        content: |
+                  - Audit
+                  - CoinGecko/CoinMarketCap listing
+                  - Airdrop Distribution
+                  - Marketplace
+                  - Staking (passive income)
+                  - Game Update
+                  - AniRace Workshop (30-day pool staking, in-game fee reduction mechanism, passive income)
+                  - Donate to an animal shelter 
+      3:
+        period: Phase 3
+        content: |
+                  - Animal Racing Lottery
+                  - Design more characters
+                  - Marketplace upgrade
+                  - Animal Racing PVC
+                  - Cex listing
+                  - Limited Animal box
+                  - Donate to the nature conservation fund
+      4:
+        period: Phase 4
+        content: |
+                  - Mobile app Release
+                  - PvP
+                  - Coming Soon
 not-found: Not found
