@@ -38,6 +38,7 @@ declare module 'vue' {
     HomeTokenomyChart: typeof import('./home/components/tokenomy/HomeTokenomyChart.vue')['default']
     HomeTokenomyLegends: typeof import('./home/components/tokenomy/HomeTokenomyLegends.vue')['default']
     HomeTokenomySection: typeof import('./home/components/tokenomy/HomeTokenomySection.vue')['default']
+    'IconCarbon:warning': typeof import('~icons/carbon/warning')['default']
     'IconFaBrands:discord': typeof import('~icons/fa-brands/discord')['default']
     'IconFaBrands:facebook': typeof import('~icons/fa-brands/facebook')['default']
     'IconFaBrands:medium': typeof import('~icons/fa-brands/medium')['default']
