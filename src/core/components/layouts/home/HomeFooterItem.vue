@@ -4,7 +4,7 @@ const props = defineProps<{ to: string; disabled?: boolean }>()
 
 <template>
   <li>
-    <Link class="flex items-center" v-bind="props" v-smooth-scroll>
+    <Link class="flex items-center lg:justify-start justify-center" v-bind="props" v-smooth-scroll>
       <slot />
     </Link>
   </li>

@@ -59,7 +59,7 @@ export default defineComponent({
               >
                 <img
                   class="h-8/10"
-                  :src="`/img/characters/${ANIMAL_MAP[selected]}.png`"
+                  :src="`/img/characters/${ANIMAL_MAP[selected]}-side.png`"
                   alt="The Animal"
                 />
               </KinesisElement>

@@ -37,9 +37,6 @@ home:
         title: Animal In The Box
         content: Each box will contain animals of different rarity, the higher the rarity the higher the number of races in the day. 
       feature-3:
-        title: Reward Pool
-        content: After each race, if the player's animal wins, he will receive an amount of exp and a corresponding amount of tokens compared to the rank that player achieved.
-      feature-4:
         title: Animal Market
         content: The Marketplace- an extremely bustling place- a place for players to exchange and trade the animals they own.
   animals:
@@ -61,6 +58,30 @@ home:
         title: Caninae
         content: |
                   The Lion and the Tiger may be more powerful, but the Wolf does not perform in the circus.
+      animal-5:
+        title: Bengal
+        content: |
+                  I will see you a hundred times before you see me once. Nothing can escape my sight.
+      animal-6:
+        title: Cheetah
+        content: |
+                  The fastest speed is not the only thing I possess.
+      animal-7:
+        title: Sus scrofa
+        content: |
+                  Don't look down on me until I've entered the real race.
+      animal-8:
+        title: Ussuri
+        content: |
+                  My strength is only revealed in anger.
+      animal-9:
+        title: Erefanto
+        content: |
+                  I don’t know anything about the world of ants; the peaks of mountains are oblivious of what is happening on the plains!
+      animal-10:
+        title: Giraffa
+        content: |
+                  My advantage is not in my legs, but in this long neck. My necks will reach the finish line before they even start running.
   tokenomy:
     title: $LION TOKENMETRIC
     legend:

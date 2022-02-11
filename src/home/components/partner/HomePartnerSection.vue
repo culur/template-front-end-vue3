@@ -16,12 +16,12 @@ const { t } = useI18n()
           </h3>
           <img class="mx-auto mb-8 max-w-64" src="/img/home/partner/bsc.png" alt="Binance Smart Chain">
         </div>
-        <div class="px-8">
+        <!-- <div class="px-8">
           <h3 class="underline uppercase font-bold">
             {{t('home.partner.audit_by')}}
           </h3>
           <img class="mx-auto max-w-64" src="/img/home/partner/certik.png" alt="Certik">
-        </div>
+        </div> -->
       </div>
     </div>
   </section>

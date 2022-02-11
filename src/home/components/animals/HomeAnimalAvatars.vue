@@ -1,3 +1,18 @@
+<script lang="ts">
+import { Navigation } from 'swiper'
+import { Swiper, SwiperSlide } from 'swiper/vue'
+import type { SwiperOptions } from 'swiper/types'
+
+import 'swiper/css'
+
+export default defineComponent({
+  components: {
+    Swiper,
+    SwiperSlide,
+  },
+})
+</script>
+
 <script setup lang="ts">
 const props = defineProps({
   modelValue: {
@@ -8,12 +23,42 @@ const props = defineProps({
 
 const emit = defineEmits(['update:modelValue'])
 const selected = useVModel(props, 'modelValue', emit)
+
+const swiperProps: SwiperOptions = {
+  navigation: {
+    nextEl: '#slide-next',
+    prevEl: '#slide-prev',
+  },
+  breakpoints: {
+    768: {
+      slidesPerView: 5,
+      slidesPerGroup: 5,
+    },
+  },
+  slidesPerView: 3,
+  slidesPerGroup: 3,
+  spaceBetween: 24,
+  loop: true,
+  modules: [Navigation],
+}
 </script>
 
 <template>
-  <ul class="grid grid-cols-[repeat(auto-fit,65px)] md:grid-cols-[repeat(auto-fit,130px)] justify-center gap-4 md:gap-12">
-    <li v-for="idx in 4" :key="idx" @click.prevent="selected = idx" class="">
-      <HomeAnimalAvatar :idx="idx" :selected="idx === selected" />
-    </li>
-  </ul>
+  <div class="max-w-xl w-full mx-auto relative">
+    <swiper v-bind="swiperProps" class="px-4">
+      <swiper-slide v-for="idx in 10" :key="idx" class="py-4" @click.prevent="selected = idx">
+        <HomeAnimalAvatar :idx="idx" :selected="idx === selected" />
+      </swiper-slide>
+    </swiper>
+    <div class="absolute top-1/2 left-0 z-10 flex justify-between transform-gpu -translate-y-1/2">
+      <button id="slide-prev" class="text-3xl text-white opacity-80" @click="prev">
+        <icon-akar-icons:circle-chevron-left-fill />
+      </button>
+    </div>
+    <div class="absolute top-1/2 right-0 z-10 flex justify-between transform-gpu -translate-y-1/2">
+      <button id="slide-next" class="text-3xl text-white opacity-80" @click="next">
+        <icon-akar-icons:circle-chevron-right-fill />
+      </button>
+    </div>
+  </div>
 </template>
