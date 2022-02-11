@@ -16,15 +16,15 @@ export const TEAM_DATA: TeamData[] = [
     image: '/img/home/team/thaz.png',
   },
   {
+    name: 'Buzz Truong',
+    title: 'CMO',
+    image: '/img/home/team/buzz.png',
+  },
+  {
     name: 'Beelly',
     title: 'CTO',
     image: '/img/home/team/beelly.png',
   },
-  // {
-  //   name: 'Rosie',
-  //   title: 'CMO',
-  //   image: '/img/home/team/rosie.png',
-  // },
   {
     name: 'Lee Max',
     title: 'Community Management',
@@ -34,11 +34,6 @@ export const TEAM_DATA: TeamData[] = [
     name: 'Vancos',
     title: 'Head of Marketing',
     image: '/img/home/team/vancos.png',
-  },
-  {
-    name: 'Buzz Truong',
-    title: 'Head of ----',
-    image: '/img/home/team/buzz.png',
   },
   {
     name: 'Min Lee',

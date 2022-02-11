@@ -44,7 +44,7 @@ const swiperProps: SwiperOptions = {
 </script>
 
 <template>
-  <div class="max-w-xl w-full mx-auto relative">
+  <div class="max-w-3xl w-full mx-auto relative">
     <swiper v-bind="swiperProps" class="px-4">
       <swiper-slide v-for="idx in 10" :key="idx" class="py-4" @click.prevent="selected = idx">
         <HomeAnimalAvatar :idx="idx" :selected="idx === selected" />

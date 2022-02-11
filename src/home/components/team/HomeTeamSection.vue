@@ -11,7 +11,7 @@ const { t } = useI18n()
       <HomeSectionHeading class="text-center mb-14">
         {{t('home.team.title')}}
       </HomeSectionHeading>
-      <section class="max-w-4xl mx-auto">
+      <section class="max-w-4xl mx-auto overflow-hidden">
         <ul class="flex flex-wrap justify-center -mx-20px">
           <li class="w-1/5 min-w-44 px-20px" v-for="team in TEAM_DATA" :key="team.name">
             <HomeTeamTile :team="team" />
