@@ -16,7 +16,7 @@ export const TEAM_DATA: TeamData[] = [
     image: '/img/home/team/thaz.png',
   },
   {
-    name: 'Buzz Truong',
+    name: 'Caninae',
     title: 'CMO',
     image: '/img/home/team/buzz.png',
   },
