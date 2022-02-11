@@ -46,11 +46,13 @@ declare module 'vue' {
     'IconFaBrands:telegram': typeof import('~icons/fa-brands/telegram')['default']
     'IconFaBrands:twitter': typeof import('~icons/fa-brands/twitter')['default']
     'IconFaBrands:youtube': typeof import('~icons/fa-brands/youtube')['default']
+    'IconIc:roundMenuOpen': typeof import('~icons/ic/round-menu-open')['default']
     LangSelect: typeof import('./core/components/LangSelect.vue')['default']
     Link: typeof import('./core/components/Link.vue')['default']
     Logo: typeof import('./core/components/Logo.vue')['default']
     Number: typeof import('./core/components/number/Number.vue')['default']
     README: typeof import('./core/components/README.md')['default']
+    StylizedButton: typeof import('./core/components/button/StylizedButton.vue')['default']
     TextCountdown: typeof import('./core/components/countdown/TextCountdown.vue')['default']
   }
 }
