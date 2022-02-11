@@ -8,7 +8,7 @@ const { t } = useI18n()
 <template>
   <section id="team" class="bg-black bg-opacity-10 py-14">
     <div class="container">
-      <HomeSectionHeading class="text-center mb-14">
+      <HomeSectionHeading class="text-center mb-14 text-[#F2FFE6]">
         {{t('home.team.title')}}
       </HomeSectionHeading>
       <section class="max-w-4xl mx-auto overflow-hidden">
