@@ -18,7 +18,7 @@ export const TEAM_DATA: TeamData[] = [
   {
     name: 'Caninae',
     title: 'CMO',
-    image: '/img/home/team/buzz.png',
+    image: '/img/home/team/caninae.png',
   },
   {
     name: 'Beelly',
