@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { PROJECT_COMMUNITIES } from '@/src/core/constants/config';
+
 const { t } = useI18n()
 </script>
 
@@ -38,40 +40,46 @@ const { t } = useI18n()
           <div class="flex-1 min-w-40 py-8 text-white">
             <h3 class="font-display uppercase mb-2 text-lg">{{ t('home.footer.social.title') }}</h3>
             <ul class="leading-loose">
-              <HomeFooterItem to="#">
+              <!-- <HomeFooterItem :to="PROJECT_COMMUNITIES.discord">
                 <icon-fa-brands:discord class="mr-1" />
                 <span>
                   Discord
                 </span>
-              </HomeFooterItem>
-              <HomeFooterItem to="#">
+              </HomeFooterItem> -->
+              <HomeFooterItem :to="PROJECT_COMMUNITIES.twitter">
                 <icon-fa-brands:twitter class="mr-1" />
                 <span>
                   Twitter
                 </span>
               </HomeFooterItem>
-              <HomeFooterItem to="#">
+              <HomeFooterItem :to="PROJECT_COMMUNITIES.telegram">
                 <icon-fa-brands:telegram class="mr-1" />
                 <span>
                   Telegram
                 </span>
               </HomeFooterItem>
-              <HomeFooterItem to="#">
+              <HomeFooterItem :to="PROJECT_COMMUNITIES.facebook">
                 <icon-fa-brands:facebook class="mr-1" />
                 <span>
                   Facebook
                 </span>
               </HomeFooterItem>
-              <HomeFooterItem to="#">
+              <HomeFooterItem :to="PROJECT_COMMUNITIES.medium">
                 <icon-fa-brands:medium class="mr-1" />
                 <span>
                   Medium
                 </span>
               </HomeFooterItem>
-              <HomeFooterItem to="#">
+              <HomeFooterItem :to="PROJECT_COMMUNITIES.youtube">
                 <icon-fa-brands:youtube class="mr-1" />
                 <span>
                   Youtube
+                </span>
+              </HomeFooterItem>
+              <HomeFooterItem :to="PROJECT_COMMUNITIES.instagram">
+                <icon-fa-brands:instagram class="mr-1" />
+                <span>
+                  Instagram
                 </span>
               </HomeFooterItem>
             </ul>
