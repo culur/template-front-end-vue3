@@ -63,7 +63,7 @@ export default defineConfig({
         'vitest',
       ],
       dts: 'src/auto-imports.d.ts',
-      resolvers: [ElementPlusResolver()]
+      resolvers: [ElementPlusResolver()],
     }),
 
     // https://github.com/antfu/unplugin-vue-components
@@ -89,7 +89,7 @@ export default defineConfig({
           componentPrefix: 'icon',
           // enabledCollections: ['icon-carbon']
         }),
-        ElementPlusResolver()
+        ElementPlusResolver(),
       ],
     }),
 

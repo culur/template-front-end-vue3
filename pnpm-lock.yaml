@@ -40,7 +40,7 @@ specifiers:
   cross-env: ^7.0.3
   cypress: ^9.1.1
   dayjs: ^1.10.7
-  element-plus: ^1.3.0-beta.3
+  element-plus: ^2.0.1
   eslint: ^8.5.0
   eslint-plugin-cypress: ^2.12.1
   ethers: ^5.5.2
@@ -101,7 +101,7 @@ dependencies:
   axios: 0.24.0
   buffer: 6.0.3
   dayjs: 1.10.7
-  element-plus: 1.3.0-beta.3_vue@3.2.26
+  element-plus: 2.0.1_vue@3.2.26
   ethers: 5.5.3
   events: 3.3.0
   json-bigint: 1.0.0
@@ -1470,8 +1470,8 @@ packages:
       lodash.once: 4.1.1
     dev: true
 
-  /@element-plus/icons-vue/0.2.4_vue@3.2.26:
-    resolution: {integrity: sha512-RsJNyL58rwxtsjeMy34o8txkL6UlME1stWsUlRpTac6UE9Bx9gdJvnDXbIKhOJqBLX17fBjmposdrn6VTqim2w==}
+  /@element-plus/icons-vue/0.2.7_vue@3.2.26:
+    resolution: {integrity: sha512-S8kDbfVaWkQvbUYQE1ui448tzaHfUvyESCep9J6uPRlViyQPXjdIfwLBhV6AmQSOfFS8rL+xehJGhvzPXLrSBg==}
     peerDependencies:
       vue: ^3.2.0
     dependencies:
@@ -1885,8 +1885,8 @@ packages:
       vue-i18n:
         optional: true
     dependencies:
-      '@intlify/message-compiler': 9.2.0-beta.28
-      '@intlify/shared': 9.2.0-beta.28
+      '@intlify/message-compiler': 9.2.0-beta.30
+      '@intlify/shared': 9.2.0-beta.30
       jsonc-eslint-parser: 1.4.1
       source-map: 0.6.1
       vue-i18n: 9.1.9_vue@3.2.26
@@ -1921,11 +1921,11 @@ packages:
       source-map: 0.6.1
     dev: false
 
-  /@intlify/message-compiler/9.2.0-beta.28:
-    resolution: {integrity: sha512-NBH9fZyitN2cijGt8bmU1W7ZPdhKbgW01L1RxJKFJW0cRaCmknJq63Aif1Q6xcxKt9ZhPbvIKHgPGzg1nWMfeA==}
+  /@intlify/message-compiler/9.2.0-beta.30:
+    resolution: {integrity: sha512-2kj/0nLIFrgiO86f9VifcUUcV8LdzXt4YYPIujx/LkTEQOuSFUo/bNiMaG1hyfiU/8mfq6tsaWKjoOZjeao1eQ==}
     engines: {node: '>= 12'}
     dependencies:
-      '@intlify/shared': 9.2.0-beta.28
+      '@intlify/shared': 9.2.0-beta.30
       source-map: 0.6.1
     dev: true
 
@@ -1948,8 +1948,8 @@ packages:
     engines: {node: '>= 10'}
     dev: false
 
-  /@intlify/shared/9.2.0-beta.28:
-    resolution: {integrity: sha512-JBMcoj1D4kSAma7Vb0+d8z6lPLIn7hIdZJPxbU8bgeMMniwKLoIS/jGlEfrZihsB5+otckPeQp203z8skwVS0w==}
+  /@intlify/shared/9.2.0-beta.30:
+    resolution: {integrity: sha512-E1WHRTIlUEse3d/6t1pAagSXRxmeVeNIhx5kT80dfpYxw8lOnCWV9wLve2bq9Fkv+3TD2I5j+CdN7jvSl3LdsA==}
     engines: {node: '>= 12'}
     dev: true
 
@@ -1967,7 +1967,7 @@ packages:
         optional: true
     dependencies:
       '@intlify/bundle-utils': 2.2.0_vue-i18n@9.1.9
-      '@intlify/shared': 9.2.0-beta.28
+      '@intlify/shared': 9.2.0-beta.30
       '@rollup/pluginutils': 4.1.2
       debug: 4.3.3
       fast-glob: 3.2.10
@@ -2381,7 +2381,7 @@ packages:
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     dependencies:
       '@typescript-eslint/types': 5.9.0
-      eslint-visitor-keys: 3.1.0
+      eslint-visitor-keys: 3.3.0
     dev: true
 
   /@vitejs/plugin-vue/2.0.1_vite@2.7.10+vue@3.2.26:
@@ -2559,6 +2559,22 @@ packages:
       vue-demi: 0.12.1_vue@3.2.26
     dev: false
 
+  /@vueuse/core/7.6.1_vue@3.2.26:
+    resolution: {integrity: sha512-492y7R9HRu6TXzcGBMVG5qg5o9CHjrWLfOHh+TEknJeLe3LIYHsIBi1IlUN5s/yP3OHlBynjrzMMUm4gEyBmQg==}
+    peerDependencies:
+      '@vue/composition-api': ^1.1.0
+      vue: ^2.6.0 || ^3.2.0
+    peerDependenciesMeta:
+      '@vue/composition-api':
+        optional: true
+      vue:
+        optional: true
+    dependencies:
+      '@vueuse/shared': 7.6.1_vue@3.2.26
+      vue: 3.2.26
+      vue-demi: 0.12.1_vue@3.2.26
+    dev: false
+
   /@vueuse/head/0.7.4_vue@3.2.26:
     resolution: {integrity: sha512-cmps+wrdgL77V72vtjU6kaAunkG6GhswaMIQoh7Twc52ql4/p7i1Amd31LqnnvNF/bfuvzcXgYvsH8I7kimZmA==}
     peerDependencies:
@@ -2569,6 +2585,21 @@ packages:
 
   /@vueuse/shared/7.5.3_vue@3.2.26:
     resolution: {integrity: sha512-BJ71cxHN5VByW1S58Gl85NFJaQu93F7Vs7K/MuAKsIIuHm9PBbkR5Vxkg9ko9cBdiKVt+FNoo13BhdbA+Vwycg==}
+    peerDependencies:
+      '@vue/composition-api': ^1.1.0
+      vue: ^2.6.0 || ^3.2.0
+    peerDependenciesMeta:
+      '@vue/composition-api':
+        optional: true
+      vue:
+        optional: true
+    dependencies:
+      vue: 3.2.26
+      vue-demi: 0.12.1_vue@3.2.26
+    dev: false
+
+  /@vueuse/shared/7.6.1_vue@3.2.26:
+    resolution: {integrity: sha512-VhURBjuyELYLW94TLqwyM+tUZ0uyWAOjp8zDnJts5wwyHZlGt/yabLbuEl70cKmt0zR9psVyAyHC+LTgRrA1Zw==}
     peerDependencies:
       '@vue/composition-api': ^1.1.0
       vue: ^2.6.0 || ^3.2.0
@@ -4022,15 +4053,15 @@ packages:
     resolution: {integrity: sha512-WhHt3sZazKj0KK/UpgsbGQnUUoFeAHVishzHFExMxagpZgjiGYSC9S0ZlbhCfSH2L2i+2A1yyqOIliTctMx7KQ==}
     dev: true
 
-  /element-plus/1.3.0-beta.3_vue@3.2.26:
-    resolution: {integrity: sha512-OeSAfuXpZJAdakC9hsQkcBrQEib+uVzzTZ52EiZZxQ1ArktxdfONkQyZ/KTR20pfr+3gla2guhWseg60md1sLA==}
+  /element-plus/2.0.1_vue@3.2.26:
+    resolution: {integrity: sha512-Cdx3JhbMNGwVsU12DUewIltJ1hUYVSgx2iBB8AuNzzOxAqcxSA9e7p2lfNp8oCBQeh4ThRSaOkdLnJyO4mS3qQ==}
     peerDependencies:
       vue: ^3.2.0
     dependencies:
       '@ctrl/tinycolor': 3.4.0
-      '@element-plus/icons-vue': 0.2.4_vue@3.2.26
+      '@element-plus/icons-vue': 0.2.7_vue@3.2.26
       '@popperjs/core': 2.11.2
-      '@vueuse/core': 7.5.3_vue@3.2.26
+      '@vueuse/core': 7.6.1_vue@3.2.26
       async-validator: 4.0.7
       dayjs: 1.10.7
       lodash: 4.17.21
@@ -4616,6 +4647,11 @@ packages:
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     dev: true
 
+  /eslint-visitor-keys/3.3.0:
+    resolution: {integrity: sha512-mQ+suqKJVyeuwGYHAdjMFqjCyfl8+Ldnxuyp3ldiMBFKkvytrXUZWaiPCEav8qDHKty44bD+qV1IP4T+w+xXRA==}
+    engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
+    dev: true
+
   /eslint/8.6.0:
     resolution: {integrity: sha512-UvxdOJ7mXFlw7iuHZA4jmzPaUqIw54mZrv+XPYKNbKdLR0et4rf60lIZUU9kiNtnzzMzGWxMV+tQ7uG7JG8DPw==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
@@ -4679,6 +4715,15 @@ packages:
       acorn: 8.7.0
       acorn-jsx: 5.3.2_acorn@8.7.0
       eslint-visitor-keys: 3.1.0
+    dev: true
+
+  /espree/9.3.1:
+    resolution: {integrity: sha512-bvdyLmJMfwkV3NCRl5ZhJf22zBFo1y8bYh3VYb+bfzqNB4Je68P2sSuXyuFquzWLebHpNd2/d5uv7yoP9ISnGQ==}
+    engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
+    dependencies:
+      acorn: 8.7.0
+      acorn-jsx: 5.3.2_acorn@8.7.0
+      eslint-visitor-keys: 3.3.0
     dev: true
 
   /esprima/4.0.1:
@@ -8616,8 +8661,8 @@ packages:
       debug: 4.3.3
       eslint: 8.6.0
       eslint-scope: 6.0.0
-      eslint-visitor-keys: 3.1.0
-      espree: 9.3.0
+      eslint-visitor-keys: 3.3.0
+      espree: 9.3.1
       esquery: 1.4.0
       lodash: 4.17.21
       semver: 7.3.5

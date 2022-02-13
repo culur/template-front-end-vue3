@@ -13,7 +13,7 @@ const { t } = useI18n()
     <div class="bg-[#2AB1D3] -mt-3px py-14">
       <div class="container">
         <div class="flex flex-wrap lg:flex-row flex-col text-center lg:text-left">
-          <div class="min-w-44 max-w-320px w-full py-8 mx-auto lg:mx-0">
+          <div class="min-w-44 max-w-320px w-full py-8 lg:pr-16 mx-auto lg:mx-0">
             <Logo />
           </div>
           <div class="flex-1 min-w-40 py-8 text-white">
