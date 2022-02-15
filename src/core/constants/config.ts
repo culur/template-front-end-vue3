@@ -14,6 +14,7 @@ export const PROJECT_COMMUNITIES = {
 
 export const PROJECT_DOCUMENT = {
   whitepaper: 'https://www.gitbook.com/',
-  faq: '',
-  tnc: '',
+  faq: '#',
+  tnc: '#',
+  disclaimer: '#',
 }

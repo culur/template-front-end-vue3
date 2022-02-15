@@ -1,14 +1,13 @@
 <script setup lang="ts">
-import { PROJECT_COMMUNITIES } from '@/src/core/constants/config';
+import { PROJECT_COMMUNITIES, PROJECT_DOCUMENT } from '@/src/core/constants/config'
 
 const { t } = useI18n()
 </script>
 
-
 <template>
   <footer>
     <div>
-      <img class="w-full object-cover" src="/img/home/footer/top_wave.png" alt="Footer Top Wave" />
+      <img class="w-full object-cover" src="/img/home/footer/top_wave.png" alt="Footer Top Wave">
     </div>
     <div class="bg-[#2AB1D3] -mt-3px py-14">
       <div class="container">
@@ -17,35 +16,63 @@ const { t } = useI18n()
             <Logo />
           </div>
           <div class="flex-1 min-w-40 py-8 text-white">
-            <h3 class="font-display uppercase mb-2 text-lg">{{ t('home.footer.about.title') }}</h3>
+            <h3 class="font-display uppercase mb-2 text-lg">
+              {{ t('home.footer.about.title') }}
+            </h3>
             <ul class="leading-loose">
-              <HomeFooterItem to="#hero">{{ t('nav.links.home') }}</HomeFooterItem>
-              <HomeFooterItem to="#about">{{ t('nav.links.about') }}</HomeFooterItem>
-              <HomeFooterItem to="#feature">{{ t('nav.links.features') }}</HomeFooterItem>
-              <HomeFooterItem to="#tokenomy">{{ t('nav.links.lion') }}</HomeFooterItem>
-              <HomeFooterItem to="#team">{{ t('nav.links.team') }}</HomeFooterItem>
-              <HomeFooterItem to="#roadmap">{{ t('nav.links.roadmap') }}</HomeFooterItem>
-              <HomeFooterItem to="#partner">{{ t('nav.links.partner') }}</HomeFooterItem>
+              <HomeFooterItem to="#hero">
+                {{ t('nav.links.home') }}
+              </HomeFooterItem>
+              <HomeFooterItem to="#about">
+                {{ t('nav.links.about') }}
+              </HomeFooterItem>
+              <HomeFooterItem to="#feature">
+                {{ t('nav.links.features') }}
+              </HomeFooterItem>
+              <HomeFooterItem to="#tokenomy">
+                {{ t('nav.links.lion') }}
+              </HomeFooterItem>
+              <HomeFooterItem to="#team">
+                {{ t('nav.links.team') }}
+              </HomeFooterItem>
+              <HomeFooterItem to="#roadmap">
+                {{ t('nav.links.roadmap') }}
+              </HomeFooterItem>
+              <HomeFooterItem to="#partner">
+                {{ t('nav.links.partner') }}
+              </HomeFooterItem>
             </ul>
           </div>
           <div class="flex-1 min-w-40 py-8 text-white">
-            <h3 class="font-display uppercase mb-2 text-lg">{{ t('home.footer.faq.title') }}</h3>
+            <h3 class="font-display uppercase mb-2 text-lg">
+              {{ t('home.footer.faq.title') }}
+            </h3>
             <ul class="leading-loose">
-              <HomeFooterItem to="#">{{ t('nav.links.whitepaper') }}</HomeFooterItem>
-              <HomeFooterItem to="#">{{ t('nav.links.disclaimer') }}</HomeFooterItem>
-              <HomeFooterItem to="#">{{ t('nav.links.toc') }}</HomeFooterItem>
-              <HomeFooterItem to="#">{{ t('nav.links.faq') }}</HomeFooterItem>
+              <HomeFooterItem :to="PROJECT_DOCUMENT.whitepaper">
+                {{ t('nav.links.whitepaper') }}
+              </HomeFooterItem>
+              <HomeFooterItem :to="PROJECT_DOCUMENT.disclaimer">
+                {{ t('nav.links.disclaimer') }}
+              </HomeFooterItem>
+              <HomeFooterItem :to="PROJECT_DOCUMENT.tnc">
+                {{ t('nav.links.toc') }}
+              </HomeFooterItem>
+              <HomeFooterItem :to="PROJECT_DOCUMENT.faq">
+                {{ t('nav.links.faq') }}
+              </HomeFooterItem>
             </ul>
           </div>
           <div class="flex-1 min-w-40 py-8 text-white">
-            <h3 class="font-display uppercase mb-2 text-lg">{{ t('home.footer.social.title') }}</h3>
+            <h3 class="font-display uppercase mb-2 text-lg">
+              {{ t('home.footer.social.title') }}
+            </h3>
             <ul class="leading-loose">
-              <!-- <HomeFooterItem :to="PROJECT_COMMUNITIES.discord">
+              <HomeFooterItem :to="PROJECT_COMMUNITIES.discord">
                 <icon-fa-brands:discord class="mr-1" />
                 <span>
                   Discord
                 </span>
-              </HomeFooterItem> -->
+              </HomeFooterItem>
               <HomeFooterItem :to="PROJECT_COMMUNITIES.twitter">
                 <icon-fa-brands:twitter class="mr-1" />
                 <span>

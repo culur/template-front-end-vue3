@@ -4,7 +4,7 @@ const { t } = useI18n()
 </script>
 
 <template>
-  <section id="roadmap" class="py-14">
+  <section id="partner" class="py-14">
     <div class="container text-white text-center">
       <HomeSectionHeading class="text-center mb-14">
         {{t('home.partner.title')}}

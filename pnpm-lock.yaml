@@ -7,6 +7,7 @@ overrides:
 specifiers:
   '@antfu/eslint-config': ^0.14.0
   '@iconify-json/akar-icons': ^1.0.8
+  '@iconify-json/bi': ^1.0.10
   '@iconify-json/carbon': ^1.0.12
   '@iconify-json/fa-brands': ^1.0.2
   '@iconify-json/ic': ^1.0.7
@@ -45,6 +46,7 @@ specifiers:
   eslint-plugin-cypress: ^2.12.1
   ethers: ^5.5.2
   events: ^3.3.0
+  floating-vue: ^2.0.0-beta.6
   https-localhost: ^4.7.0
   json-bigint: ^1.0.0
   lodash-es: ^4.17.21
@@ -104,6 +106,7 @@ dependencies:
   element-plus: 2.0.1_vue@3.2.26
   ethers: 5.5.3
   events: 3.3.0
+  floating-vue: 2.0.0-beta.6_vue@3.2.26
   json-bigint: 1.0.0
   lodash-es: 4.17.21
   markdown-it: 12.3.2
@@ -129,6 +132,7 @@ dependencies:
 devDependencies:
   '@antfu/eslint-config': 0.14.2_eslint@8.6.0+typescript@4.5.4
   '@iconify-json/akar-icons': 1.0.8
+  '@iconify-json/bi': 1.0.10
   '@iconify-json/carbon': 1.0.12
   '@iconify-json/fa-brands': 1.0.2
   '@iconify-json/ic': 1.0.7
@@ -1500,7 +1504,7 @@ packages:
     dependencies:
       ajv: 6.12.6
       debug: 4.3.3
-      espree: 9.3.0
+      espree: 9.3.1
       globals: 13.12.0
       ignore: 4.0.6
       import-fresh: 3.3.0
@@ -1824,6 +1828,16 @@ packages:
       '@ethersproject/strings': 5.5.0
     dev: false
 
+  /@floating-ui/core/0.3.1:
+    resolution: {integrity: sha512-ensKY7Ub59u16qsVIFEo2hwTCqZ/r9oZZFh51ivcLGHfUwTn8l1Xzng8RJUe91H/UP8PeqeBronAGx0qmzwk2g==}
+    dev: false
+
+  /@floating-ui/dom/0.1.10:
+    resolution: {integrity: sha512-4kAVoogvQm2N0XE0G6APQJuCNuErjOfPW8Ux7DFxh8+AfugWflwVJ5LDlHOwrwut7z/30NUvdtHzQ3zSip4EzQ==}
+    dependencies:
+      '@floating-ui/core': 0.3.1
+    dev: false
+
   /@humanwhocodes/config-array/0.9.2:
     resolution: {integrity: sha512-UXOuFCGcwciWckOpmfKDq/GyhlTf9pN/BzG//x8p8zTOFEcGuA68ANXheFS0AGvy3qgZqLBUkMs7hqzqCKOVwA==}
     engines: {node: '>=10.10.0'}
@@ -1841,6 +1855,12 @@ packages:
 
   /@iconify-json/akar-icons/1.0.8:
     resolution: {integrity: sha512-R5KrjYYHwFWJ1YA2Cyh5aenHJPYrSQBdSac0JbanBL96kvKi7LQ3Jb4HP+teGvfpGWcooaJNGWnFDNI7rVSxPg==}
+    dependencies:
+      '@iconify/types': 1.0.12
+    dev: true
+
+  /@iconify-json/bi/1.0.10:
+    resolution: {integrity: sha512-mvVWW68kRup2ZP2UCmxMBlUs46tmYqZyCvfnSIc/g7TwSZn4BFihazirNL0nOJS2dcZy+lhh9SouQltyuLIjfw==}
     dependencies:
       '@iconify/types': 1.0.12
     dev: true
@@ -4714,7 +4734,7 @@ packages:
     dependencies:
       acorn: 8.7.0
       acorn-jsx: 5.3.2_acorn@8.7.0
-      eslint-visitor-keys: 3.1.0
+      eslint-visitor-keys: 3.3.0
     dev: true
 
   /espree/9.3.1:
@@ -5059,6 +5079,16 @@ packages:
   /flatted/3.2.4:
     resolution: {integrity: sha512-8/sOawo8tJ4QOBX8YlQBMxL8+RLZfxMQOif9o0KUKTNTjMYElWPE0r/m5VNFxTRd0NSw8qSy8dajrwX4RYI1Hw==}
     dev: true
+
+  /floating-vue/2.0.0-beta.6_vue@3.2.26:
+    resolution: {integrity: sha512-coDzBja+fq3EKFbfljrE67YDIiTszmbdxnaWz3VzJqrs0Xc5ZIzTBya0kIOnndt3BPCeWGB4DIwaSG9r4nHGpg==}
+    peerDependencies:
+      vue: ^3.2.0
+    dependencies:
+      '@floating-ui/dom': 0.1.10
+      vue: 3.2.26
+      vue-resize: 2.0.0-alpha.1_vue@3.2.26
+    dev: false
 
   /follow-redirects/1.14.6:
     resolution: {integrity: sha512-fhUl5EwSJbbl8AR+uYL2KQDxLkdSjZGR36xy46AO7cOMTrCMON6Sa28FmAnC2tRTDbd/Uuzz3aJBv7EBN7JH8A==}
@@ -5928,8 +5958,8 @@ packages:
     dependencies:
       acorn: 8.7.0
       eslint-utils: 3.0.0_eslint@8.6.0
-      eslint-visitor-keys: 3.1.0
-      espree: 9.3.0
+      eslint-visitor-keys: 3.3.0
+      espree: 9.3.1
       semver: 7.3.5
     transitivePeerDependencies:
       - eslint
@@ -8692,6 +8722,14 @@ packages:
       vue: 3.2.26
     dev: false
 
+  /vue-resize/2.0.0-alpha.1_vue@3.2.26:
+    resolution: {integrity: sha512-7+iqOueLU7uc9NrMfrzbG8hwMqchfVfSzpVlCMeJQe4pyibqyoifDNbKTZvwxZKDvGkB+PdFeKvnGZMoEb8esg==}
+    peerDependencies:
+      vue: ^3.0.0
+    dependencies:
+      vue: 3.2.26
+    dev: false
+
   /vue-router/4.0.12_vue@3.2.26:
     resolution: {integrity: sha512-CPXvfqe+mZLB1kBWssssTiWg4EQERyqJZes7USiqfW9B5N2x+nHlnsM1D3b5CaJ6qgCvMmYJnz+G0iWjNCvXrg==}
     peerDependencies:
@@ -9138,7 +9176,7 @@ packages:
     resolution: {integrity: sha512-nJeyLA3YHAzhBTZbRAbu3W6xrSCucyxExmA+ZDtEdUFpGllxAZpto2Zxo2IG0r0eiuEiBM4e+wiAdxTziTq94g==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     dependencies:
-      eslint-visitor-keys: 3.1.0
+      eslint-visitor-keys: 3.3.0
       lodash: 4.17.21
       yaml: 1.10.2
     dev: true

@@ -4,7 +4,10 @@ const props = defineProps<{ to: string; disabled?: boolean }>()
 
 <template>
   <li>
-    <Link class="flex items-center lg:justify-start justify-center" v-bind="props" v-smooth-scroll>
+    <Link v-if="to.includes('#')" v-smooth-scroll class="flex items-center lg:justify-start justify-center" v-bind="props">
+      <slot />
+    </Link>
+    <Link v-else class="flex items-center lg:justify-start justify-center" v-bind="props">
       <slot />
     </Link>
   </li>
