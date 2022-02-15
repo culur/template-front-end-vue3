@@ -6,6 +6,7 @@ declare module 'vue' {
   export interface GlobalComponents {
     BalanceNumber: typeof import('./core/components/number/BalanceNumber.vue')['default']
     BlobMask: typeof import('./core/components/BlobMask.vue')['default']
+    Card: typeof import('./core/components/card/Card.vue')['default']
     Circle: typeof import('./core/components/button/Circle.vue')['default']
     CurrencyNumber: typeof import('./core/components/number/CurrencyNumber.vue')['default']
     DefaultAside: typeof import('./core/components/layouts/default/DefaultAside.vue')['default']
