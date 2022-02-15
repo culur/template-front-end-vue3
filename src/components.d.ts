@@ -10,7 +10,6 @@ declare module 'vue' {
     Circle: typeof import('./core/components/button/Circle.vue')['default']
     CurrencyNumber: typeof import('./core/components/number/CurrencyNumber.vue')['default']
     DefaultAside: typeof import('./core/components/layouts/default/DefaultAside.vue')['default']
-    DefaultFooter: typeof import('./core/components/layouts/default/DefaultFooter.vue')['default']
     DefaultAsideItem: typeof import('./core/components/layouts/default/DefaultAsideItem.vue')['default']
     DefaultHeader: typeof import('./core/components/layouts/default/DefaultHeader.vue')['default']
     ElDrawer: typeof import('element-plus/es')['ElDrawer']
