@@ -1,6 +1,9 @@
 button:
   staking: Staking
   play: Play
+  connect-wallet: Connect Wallet
+common:
+  balance: Balance
 nav:
   links:
     home: Home
