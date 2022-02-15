@@ -22,7 +22,7 @@ export default defineComponent({
     class="aspect-square relative cursor-pointer filter !hover:brightness-90 transition-all duration-300"
     :class="!selected && 'brightness-50'"
   >
-    <KinesisElement strength="8" type="rotate" class="inset-0 absolute">
+    <KinesisElement :strength="8" type="rotate" class="inset-0 absolute">
       <div class="absolute inset-x-0 top-0 bottom-1 overflow-hidden rounded-5xl bg-[#375B18]">
         <img
           :src="`/img/home/animals/animal-${idx}.png`"
