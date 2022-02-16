@@ -8,7 +8,7 @@ const { t } = useI18n()
       class="h-full min-w-240px"
       body-class="h-full overflow-hidden"
       inner-class="h-full"
-      inner-shadow
+      inner-shadow-bottom
     >
       <img
         src="/img/big-logo.png"
