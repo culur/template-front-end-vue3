@@ -78,7 +78,7 @@ const { top } = toRefs(arrivedState)
                 </el-dropdown-menu>
               </template>
             </el-dropdown>
-            <HomeHeaderItem to="/#coming-soon">
+            <HomeHeaderItem to="/play">
               <HomePlayBtn />
             </HomeHeaderItem>
           </ul>
