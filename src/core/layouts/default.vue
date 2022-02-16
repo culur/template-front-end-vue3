@@ -10,6 +10,7 @@
         inner-shadow-bottom
       >
         <router-view />
+        <div id="modals" />
       </Card>
     </main>
   </section>
