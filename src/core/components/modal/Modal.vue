@@ -6,6 +6,10 @@ const props = defineProps({
     type: Boolean,
     default: false,
   },
+  width: {
+    type: Number,
+    default: 400,
+  },
 })
 
 const isMounted = ref(false)
@@ -17,7 +21,7 @@ onMounted(() => isMounted.value = true)
 <template>
   <Teleport v-if="isMounted" to="#modals">
     <div v-show="modelValue" class="modal__overlay" @click="close">
-      <div class="modal" @click.stop>
+      <div class="modal" :style="{ width: `${width}px` }" @click.stop>
         <div class="modal__box">
           <div class="modal__header">
             <slot name="header" :close="close" />
@@ -46,7 +50,7 @@ onMounted(() => isMounted.value = true)
 .modal__box {
   @apply relative;
   @apply border-solid rounded-xl border-4 border-[#4A3011];
-  @apply bg-[#FFEAB3] px-3 pt-3 pb-6 w-407px;
+  @apply bg-[#FFEAB3] px-3 pt-3 pb-6;
 
   box-shadow: 0px 6px 0px 0px #00000026;
 }
