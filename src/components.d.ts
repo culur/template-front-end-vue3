@@ -68,6 +68,7 @@ declare module 'vue' {
     LangSelect: typeof import('./core/components/LangSelect.vue')['default']
     Link: typeof import('./core/components/Link.vue')['default']
     Logo: typeof import('./core/components/Logo.vue')['default']
+    Modal: typeof import('./core/components/modal/Modal.vue')['default']
     Number: typeof import('./core/components/number/Number.vue')['default']
     README: typeof import('./core/components/README.md')['default']
     StylizedBtn: typeof import('./core/components/button/StylizedBtn.vue')['default']
