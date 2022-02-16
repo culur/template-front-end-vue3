@@ -8,7 +8,11 @@ const props = defineProps({
     type: String,
     default: '',
   },
-  innerShadow: {
+  innerShadowTop: {
+    type: Boolean,
+    default: false,
+  },
+  innerShadowBottom: {
     type: Boolean,
     default: false,
   },
@@ -16,9 +20,13 @@ const props = defineProps({
 </script>
 
 <template>
-  <div class="card" :class="{
-    'card--inner-shadow': innerShadow
-  }">
+  <div
+    class="card"
+    :class="{
+      'card--inner-shadow-top': innerShadowTop,
+      'card--inner-shadow-bottom': innerShadowBottom,
+    }"
+  >
     <div class="card__inner" :class="innerClass">
       <div class="card__body" :class="bodyClass">
         <slot />
@@ -44,8 +52,11 @@ const props = defineProps({
     #946305;
 }
 
-.card--inner-shadow .card__body {
-  box-shadow: 0px 14px 0px 0px #fff2d1 inset, 0px -23px 0px 0px #0000001c inset;
+.card--inner-shadow-top .card__body {
+  box-shadow: 0px 14px 0px 0px #fff2d1 inset;
+}
+.card--inner-shadow-bottom .card__body {
+  box-shadow: 0px -23px 0px 0px #0000001c inset;
 }
 
 .card::before {

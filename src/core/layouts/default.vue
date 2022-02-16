@@ -3,7 +3,14 @@
     <DefaultAside class="row-span-2" />
     <DefaultHeader class="col-span-1" />
     <main>
-      <router-view />
+      <Card
+        class="h-full"
+        body-class="h-full py-10px px-3"
+        inner-class="h-full"
+        inner-shadow-bottom
+      >
+        <router-view />
+      </Card>
     </main>
   </section>
 </template>
@@ -18,8 +25,8 @@
     @apply inset-0 absolute;
     @apply opacity-30;
 
-    content: '';
-    background-image: url('/img/textures/dirt-pattern.png');
+    content: "";
+    background-image: url("/img/textures/dirt-pattern.png");
     background-size: 100px;
   }
 }
