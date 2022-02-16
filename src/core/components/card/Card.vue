@@ -16,12 +16,9 @@ const props = defineProps({
 </script>
 
 <template>
-  <div
-    class="card"
-    :class="{
-      'card--inner-shadow': innerShadow
-    }"
-  >
+  <div class="card" :class="{
+    'card--inner-shadow': innerShadow
+  }">
     <div class="card__inner" :class="innerClass">
       <div class="card__body" :class="bodyClass">
         <slot />
@@ -34,10 +31,17 @@ const props = defineProps({
 .card {
   @apply relative;
   @apply border-4 rounded-20px overflow-hidden;
-  @apply bg-[#946305] border-[#4A3011];
+  @apply border-[#4A3011];
   @apply p-2.5;
 
   box-shadow: 0px 6px 0px 0px #00000026;
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.1) 50%,
+      rgba(0, 0, 0, 0) 50%,
+      rgba(0, 0, 0, 0) 100%
+    ),
+    #946305;
 }
 
 .card--inner-shadow .card__body {
