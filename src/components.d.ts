@@ -5,6 +5,7 @@
 declare module 'vue' {
   export interface GlobalComponents {
     BalanceNumber: typeof import('./core/components/number/BalanceNumber.vue')['default']
+    BaseInput: typeof import('./core/components/input/BaseInput.vue')['default']
     BlobMask: typeof import('./core/components/BlobMask.vue')['default']
     Card: typeof import('./core/components/card/Card.vue')['default']
     Circle: typeof import('./core/components/button/Circle.vue')['default']
@@ -70,9 +71,11 @@ declare module 'vue' {
     Logo: typeof import('./core/components/Logo.vue')['default']
     Modal: typeof import('./core/components/modal/Modal.vue')['default']
     Number: typeof import('./core/components/number/Number.vue')['default']
+    NumberInput: typeof import('./core/components/input/NumberInput.vue')['default']
     README: typeof import('./core/components/README.md')['default']
     StylizedBtn: typeof import('./core/components/button/StylizedBtn.vue')['default']
     TextCountdown: typeof import('./core/components/countdown/TextCountdown.vue')['default']
+    TextInput: typeof import('./core/components/input/TextInput.vue')['default']
   }
 }
 

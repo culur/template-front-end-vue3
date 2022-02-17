@@ -2,6 +2,8 @@
 const { t } = useI18n()
 
 const isShow = ref(false)
+const text = ref('abc')
+const number = ref('123')
 </script>
 
 <template>
@@ -13,6 +15,8 @@ const isShow = ref(false)
     <StylizedBtn class="ml-2" @click="isShow = true">
       Open modal
     </StylizedBtn>
+    <TextInput v-model="text" error />
+    <NumberInput v-model="number" />
   </div>
   <Modal v-model="isShow">
     <template #header>
