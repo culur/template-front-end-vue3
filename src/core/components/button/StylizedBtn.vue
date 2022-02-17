@@ -9,6 +9,10 @@ const props = defineProps({
     type: String,
     default: 'green',
   },
+  disabled: {
+    type: Boolean,
+    default: false,
+  },
 })
 
 const classes = computed(() => {
@@ -20,13 +24,17 @@ const classes = computed(() => {
   if (!['green', 'yellow'].includes(color))
     color = 'green'
 
-  return [`is-${size}`, `is-${color}`]
+  return [`is-${size}`, `is-${color}`, { disabled: props.disabled }]
 })
 
 </script>
 
 <template>
-  <button class="text-white stylized-button flex items-center" :class="classes">
+  <button
+    class="flex text-white stylized-button items-center"
+    :class="classes"
+    :disabled="disabled"
+  >
     <slot />
   </button>
 </template>
@@ -73,5 +81,17 @@ const classes = computed(() => {
   @apply transform-gpu translate-y-2px;
   @apply bg-[#ffaf15];
   @apply transition-all duration-150;
+}
+
+.stylized-button.disabled,
+.stylized-button.disabled:hover,
+.stylized-button.disabled:active {
+  box-shadow: 0px 4px 0px 0px #7b7b7b;
+  @apply cursor-not-allowed bg-[#9B9B9B] text-white;
+}
+
+.stylized-button.disabled:hover,
+.stylized-button.disabled:active {
+  @apply transform-none;
 }
 </style>
